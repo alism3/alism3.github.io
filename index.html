@@ -4,22 +4,111 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SheCodes</title>
+    <title>Portfolio</title>
     <link rel="Stylesheet" href="styles.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carattere&family=Clicker+Script&display=swap" rel="stylesheet">
   <body>
-    <img src="Brand.png" alt="Alima Lab logo" class="logo" />
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
+    <header class="flex space navbar padding-small">
+    <img src="img/Brand.png" alt="Alima Lab logo" class="logo" />
+    <nav class="navbar">
+      <ul class="flex"> 
+        <li><a href="service.html">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-  </body>
+  </header>
   <main>
+    <section class="intro">
+      <div class="flex column hero-content">
+        <h1 class="welcome carattere-regular">WELCOME</h1>
+        <p>I'm glad you are here!</p>
+        <div> <p>
+          I'm <strong>Alice</strong> — designer ✨, coder 💻 & creative soul 💅. <br> </p>
+          <p> beautiful things at the intersection of <em>style, strategy, and code</em>.
+        </p>
+        </div>
+        <a href="#" class="button">Explore My World</a>
+      </div>
+      <img src="img/AM_.png" alt="AM" class= "Me">
+    </section>
+      <section class="Services">
+        <h2> My Services</h2>
+        <article class="service">
+        <img src="img/multiple-devices.png" alt="devices" class="websites"/>
+        <h3>Website Creation</h3>
+        <p>Beautiful, responsive websites built with HTML & CSS — designed with strategy and soul.</p>
+          <a href="https://your-link.com" target="_blank" class="button">Explore</a>
+    </article>
+      </article>
+      <article class="service">
+        <img src="img/branding.png" alt="branding" class="branding"/>
+        <h3>Branding & Visual Identity</h3>
+        <p>Logo design, color palettes, and brand guides to help you stand out and stay consistent.</p>
+        <a href="service.html" target="_blank" class="button">Explore</a>
+    </article>
+      </article>
+      <article class="service">
+        <img src="service.html" alt="Admin" class="Admin"/>
+        <h3>Creative Admin Support</h3>
+        <p>Canva templates, quotes & contracts, digital organization and support tailored for creators.</p>
+        <a href="service.html" target="_blank" class="button">Explore</a>
+    </article>
+      </article>
+    </section>
+<section id="skills" class="skills">
+  <h2>Skills & Tools</h2>
+  <div class="skills-grid">
+    <article class="skill">
+      <img src="img/html-5.png" alt="HTML5 Icon" class="HTML" />
+      <p>HTML5</p>
+    </article>
+    <article class="skill">
+      <img src="img/css-3.png" alt="CSS3 Icon" class="css-3" />
+      <p>CSS3</p>
+    </article>
+    <article class="skill">
+      <img src="img/canva.png" alt="Canva Icon" class="canva" />
+      <p>Canva</p>
+    </article>
+     <article class="skill">
+      <img src="img/figma.png" alt="Figma Icon" class="Figma" />
+      <p>Figma</p>
+    </article>
+<section>
+  <h2> My Projects</h2>
+  <div class="projects-grid">
+    
+    <article class="project">
+      <img src="img/project1.png" alt="Screenshot of Project 1" class="project-image" />
+      <h3>Project 1</h3>
+      <a href="https://your-link.com" target="_blank" class="button">Explore</a>
+    </article>
+
+    <article class="project">
+      <img src="#" alt="Screenshot of Project 2" class="project-image" />
+      <h3>Project 2</h3>
+      <a href="#" target="_blank" class="button">Explore</a>
+    </article>
+
+    <article class="project">
+      <img src="img/project3.png" alt="Screenshot of Project 3" class="project-image" />
+      <h3>Project 3 </h3>
+      <a href="#" target="_blank" class="button">Explore</a>
+    </article>
+</section>
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I'm Alice — a creative mind with a love for <strong>style</strong>, <strong>design</strong> & a growing passion for <strong>code</strong>.  
+    From sketching layouts to crafting websites, I bring ideas to life with a touch of pastel magic ✨.  
+    ALIM@LAB is where strategy meets sparkle — and where every project has heart.
+  </p>
+</section>
+</section>
     <section class="contact">
         <h2>Get in Touch</h2>
         <form class="flex column">
@@ -28,31 +117,34 @@
           <label for="Email"> Email</label>
           <input type="text" id="Your Email" />
             <label for="number"> Phone Number</label>
-          <input type="number" id="Your Number" />x
+          <input type="number" id="Your Number" />
           <label for="Message">Your Message:</label>
           <textarea name="message-text" id="message" rows="10"></textarea>
           <input type="submit" value="submit" class="button" />
         </form>
-      </section>
   </main>
   <footer>
-      <nav>
-        <ul>
+   <nav>
+        <ul class="social flex">
           <li>
-        
+            <a href="#">
+              <img src="img/linkedin-2.png" alt="Linkedin" class="icon" />
+            </a>
           </li>
           <li>
-
+            <a href="#">
+              <img src="img/instagram.png" alt="instagram" class="icon"
+            /></a>
           </li>
           <li>
-
+            <a href="#">
+              <img src="img/envelope.png" alt="Mail" class="icon" />
+            </a>
           </li>
         </ul>
       </nav>
-      <div>
-        <p>&copy; Alima Lab </p>
-      </div>
+      <footer>
+      <p>&copy; 2025 Alima Lab</p>
     </footer>
-  </body>
 </html>
 </html>

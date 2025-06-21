@@ -51,3 +51,75 @@ textarea,
 select {
   font: inherit;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.flex {
+  display: flex;
+  gap: 70px;
+  padding: 50px;
+}
+
+.padding-small {
+  padding: 8px;
+}
+.padding-medium {
+  padding: 16px;
+}
+.padding-large {
+  padding: 32px;
+}
+.padding-xl {
+  padding: 64px;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  gap: 60px;
+  flex-wrap: wrap;
+  border: 1px red solid;
+  justify-content: flex-start;
+}
+
+/* === Hero Photo === */
+.Me {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.column {
+  flex-direction: column;
+}
+.intro {
+  display: flex;
+  background-color: #fae2df;
+  justify-content: space-between;
+  align-items: center;
+}
+.centre {
+  justify-content: center;
+}
+.button {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: max-content;
+  display: inline-block;
+}
+.carattere-regular {
+  font-family: "Carattere", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
