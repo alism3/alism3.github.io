@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Get in Touch</h1>
+        <section class="contact">
+          <form
+            class="form flex column"
+            action="https://formspree.io/f/xldnprge"
+            method="POST"
+            enctype="text/plain"
+          >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="number" />
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="10"></textarea>
+
+            <input type="submit" value="submit" class="button" />
+          </form>
+        </section>
+      </div>
+    </header>
+  </body>
+</html>

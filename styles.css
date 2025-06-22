@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap");
+:root {
+  --feature-font: "Rock Salt", cursive;
+  --base-font: "Roboto Condensed", sans-serif;
+  --font-size: 1em;
+  --padding: 10px;
+}
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--base-font);
   color: var(--black);
   scroll-behavior: smooth;
 }
@@ -18,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--feature-font);
 }
 
 body,
@@ -40,6 +47,20 @@ ul {
   list-style: none;
 }
 
+h2 {
+  display: flex;
+  margin: 30px;
+}
+
+h3 {
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+}
+body {
+  margin: 30px;
+  font-size: 25px;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -54,7 +75,7 @@ select {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #ffffff;
 }
@@ -67,6 +88,7 @@ select {
   display: flex;
   gap: 70px;
   padding: 50px;
+  justify-content: space-around;
 }
 
 .padding-small {
@@ -81,14 +103,26 @@ select {
 .padding-xl {
   padding: 64px;
 }
+.welcome {
+  font-size: 50px;
+}
 .hero-content {
   display: flex;
   align-items: center;
-  padding: 60px;
+  padding: 40px 5%;
   gap: 60px;
   flex-wrap: wrap;
-  border: 1px red solid;
   justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 20px;
+}
+.gap {
+  gap: 30px;
+  margin: 20 px;
+}
+header {
+  display: flex;
+  justify-content: center;
 }
 
 /* === Hero Photo === */
@@ -104,22 +138,104 @@ select {
 }
 .intro {
   display: flex;
-  background-color: #fae2df;
-  justify-content: space-between;
+  background-color: #58b09c;
+  justify-content: space-around;
   align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
 }
 .centre {
   justify-content: center;
 }
 .button {
-  background-color: orange;
+  background-color: #f7fa3b;
   padding: 10px;
   border-radius: 20px;
   max-width: max-content;
   display: inline-block;
+  justify-content: center;
+  align-self: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
-.carattere-regular {
-  font-family: "Carattere", cursive;
-  font-weight: 400;
-  font-style: normal;
+.service {
+  background-color: #fae2df;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.skill {
+  width: 90px;
+}
+
+.image {
+  display: flex;
+  width: 800px;
+  height: 200px;
+  border-radius: 20px;
+}
+.project {
+  background-color: #d6aba6;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+/* I have no clue about how I did the effect on the about me section, but I LOVE IT */
+.about {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg);
+  justify-content: center;
+  align-items: stretch;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+.contact {
+  max-width: max-content;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #58b09c;
+  padding: 80px;
+  margin: 20px;
+}
+.form {
+}
+.social {
+  display: flex;
+  justify-content: center;
+  flex-direction: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+.icon {
+  width: 50px;
+}
+/* here starts the contact page */
+
+.contact {
+  max-width: 100%;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  margin: 20px;
+  background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg);
+}
+.form {
+  width: 600px;
+  font-style: var(--feature-font);
+}
+header > div > h1 {
+  text-align: center;
 }
