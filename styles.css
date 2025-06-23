@@ -78,6 +78,9 @@ select {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  ul {
+    flex-direction: column;
+  }
 }
 .logo {
   height: 100px;
@@ -104,7 +107,7 @@ select {
   padding: 64px;
 }
 .welcome {
-  font-size: 50px;
+  font-size: 30px;
 }
 .hero-content {
   display: flex;
@@ -144,6 +147,7 @@ header {
   border-radius: 20px;
   padding: 20px;
   margin: 20px;
+  flex-direction: column;
 }
 .centre {
   justify-content: center;
@@ -157,6 +161,9 @@ header {
   justify-content: center;
   align-self: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.services {
+  flex-direction: column;
 }
 .service {
   background-color: #fae2df;
@@ -177,6 +184,9 @@ header {
   width: 800px;
   height: 200px;
   border-radius: 20px;
+}
+.projects {
+  flex-direction: column;
 }
 .project {
   background-color: #d6aba6;
@@ -238,4 +248,23 @@ header {
 }
 header > div > h1 {
   text-align: center;
+}
+
+/* This applies only above 768 px - common phone size */
+@media only screen and (min-width: 768px) {
+  .services,
+  .projects,
+  .navbar ul {
+    flex-direction: row;
+  }
+  .intro {
+    flex-direction: row-reverse;
+  }
+  .welcome {
+    font-size: 50px;
+  }
+}
+
+/* This applies only above 1024 px - common tablet size */
+@media only screen and (min-width: 1024px) {
 }
